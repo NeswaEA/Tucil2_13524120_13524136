@@ -7,7 +7,6 @@ public class ObjParser {
     public List<Vector3> vertices = new ArrayList<>();
     public List<Triangle> faces = new ArrayList<>();
     
-    // Dimensi untuk Bounding Box
     public double minX = Double.MAX_VALUE, maxX = -Double.MAX_VALUE;
     public double minY = Double.MAX_VALUE, maxY = -Double.MAX_VALUE;
     public double minZ = Double.MAX_VALUE, maxZ = -Double.MAX_VALUE;
@@ -27,14 +26,12 @@ public class ObjParser {
                 Vector3 v = new Vector3(x, y, z);
                 vertices.add(v);
 
-                // Update Bounding Box
                 minX = Math.min(minX, x); maxX = Math.max(maxX, x);
                 minY = Math.min(minY, y); maxY = Math.max(maxY, y);
                 minZ = Math.min(minZ, z); maxZ = Math.max(maxZ, z);
 
             } else if (line.startsWith("f ")) {
                 String[] tokens = line.split("\\s+");
-                // Mengambil indeks vertex (format obj menggunakan 1-based indexing)
                 int i = Integer.parseInt(tokens[1].split("/")[0]) - 1;
                 int j = Integer.parseInt(tokens[2].split("/")[0]) - 1;
                 int k = Integer.parseInt(tokens[3].split("/")[0]) - 1;
