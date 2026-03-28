@@ -26,14 +26,14 @@ public class Statistics {
         System.out.println("Banyaknya faces yang terbentuk: " + totalVoxels*12);
         
         System.out.println();
-        System.out.println("Statistik node octree yang terbentuk dalam format:");
+        System.out.println("Banyaknya node octree yang terbentuk (tiap depth):");
         for (int i = 1; i <= maxDepth; i++) {
             System.out.printf("%d : %d", i, nodesDibentuk.getOrDefault(i, 0));
             System.out.println();
         }
         
         System.out.println();
-        System.out.println("Statistik node yang tidak perlu ditelusuri dalam format:");
+        System.out.println("Banyaknya node yang tidak perlu ditelusuri (tiap depth):");
         for (int i = 1; i <= maxDepth; i++) {
             System.out.printf("%d : %d", i, nodesTidakPerlu.getOrDefault(i, 0));
             System.out.println();
