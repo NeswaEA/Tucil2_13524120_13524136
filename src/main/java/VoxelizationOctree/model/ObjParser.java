@@ -1,4 +1,4 @@
-package VoxelizationOctree;
+package VoxelizationOctree.model;
 
 import java.io.*;
 import java.util.*;

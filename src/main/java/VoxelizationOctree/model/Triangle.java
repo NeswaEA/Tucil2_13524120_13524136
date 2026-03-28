@@ -1,4 +1,4 @@
-package VoxelizationOctree;
+package VoxelizationOctree.model;
 
 public class Triangle {
     public Vector3 v0, v1, v2;
