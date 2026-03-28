@@ -28,8 +28,13 @@ mvn clean package
 ```
 
 2. Run
+   Linux
 ```bash
 mvn exec:java -Dexec.mainClass="VoxelizationOctree.App"
+```
+   Windows
+```bash
+mvn exec:java "-Dexec.mainClass=VoxelizationOctree.App"
 ```
 
 3. Ikuti petunjuk pada CLI
