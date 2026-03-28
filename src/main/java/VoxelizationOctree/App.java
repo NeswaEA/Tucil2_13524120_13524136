@@ -53,10 +53,10 @@ public class App {
             List<OctreeNode> voxels = new ArrayList<>();
             root.collectLeafVoxels(voxels);
 
-            VoxelWriter.writeToFile(voxels, "test/Output/"+outputFileLocation+".obj");
+            VoxelWriter.writeToFile(voxels, "test/output/"+outputFileLocation+".obj");
 
             long duration = System.currentTimeMillis() - startTime;
-            Statistics.display(maxDepth, duration, "test/Output/"+outputFileLocation+".obj", voxels.size());
+            Statistics.display(maxDepth, duration, "test/output/"+outputFileLocation+".obj", voxels.size());
 
         } catch (Exception e) {
             System.err.println("Error: " + e.getMessage());

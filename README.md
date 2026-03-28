@@ -1,9 +1,13 @@
-# Tucil2_13524120_13524136
+# Tugas Kecil 2 IF2211 Strategi Algoritma 
 
 | NIM | Nama |
 | ---- | --- |
 13524120 | Jonathan Alveraldo Bangun
 13524136 | Neswa Eka Anggara
+
+## VoxelizationOctree
+Sebuah program yang dapat mengkonversi model .obj yang umum menjadi model .obj yang terdiri dari voxel dengan memanfaatkan properti Octree. Program melakukan konversi model dengan menggunakan algoritma divide and conquer.
+
 
 ## Requirements
 
@@ -22,11 +26,10 @@
 ```bash
 mvn clean package
 ```
-or
-```bash
-mvn clean compile
-```
 
 2. Run
 ```bash
 mvn exec:java -Dexec.mainClass="VoxelizationOctree.App"
+```
+
+3. Ikuti petunjuk pada CLI
